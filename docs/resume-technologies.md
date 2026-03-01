@@ -10,6 +10,7 @@ Redis
 
 React.js
 Vue.js
+Tailwind CSS
 
 ## DevOps & Cloud
 
