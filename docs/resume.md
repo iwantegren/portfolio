@@ -63,3 +63,10 @@ Optimized algorithms for processing large volumes of binary data.
 Implemented multithreaded processing to increase throughput and responsiveness.
 
 Nov 2018 – Dec 2021
+
+# Education timeline
+
+M.Sc. in Computer Science
+V. N. Karazin Kharkiv National University, Ukraine
+
+2015 – 2021

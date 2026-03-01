@@ -29,7 +29,7 @@
   <section class="hero">
     <div class="container">
       <div class="hero__text">
-        <span class="hero__badge">// available for freelance</span>
+        <span class="hero__badge">// available for freelance projects</span>
         <h1 class="hero__title">
           Full-Stack Engineer<br />
           <span>&</span> Indie Developer
@@ -56,17 +56,24 @@
     <div class="container">
       <!-- Shellfish Card -->
       <!-- TODO fill shellfish info -->
-      <div class="spotlight__card">
+      <div class="spotlight__card" style="position: relative;">
         <img src="assets/shellfish-logo.webp" alt="Project logo" class="spotlight__logo" />
         <div class="spotlight__info">
-          <p class="spotlight__label">Featured Project</p>
-          <h2 class="spotlight__title">E-commerce Sandbox Architecture</h2>
+          <!-- <p class="spotlight__label">Featured Project</p> -->
+          <h2 class="spotlight__title">Shellfish - AI Voice Notes Assistant</h2>
           <p class="spotlight__desc">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula metus non tortor gravida, id fermentum purus vestibulum. Sed ac interdum ligula, et volutpat urna. Shopify, Hydrogen & Remix stack powering a next-gen storefront.
+            Notes assistant for people who don't want good ideas to evaporate.
+          </p>
+          <p class="spotlight__desc">
+            Save thoughts by voice or text, organize with your own categories, and set reminders when something must resurface.
+          </p>
+          <p class="spotlight__desc" style="margin-top: 12px;">
+            Currently available via Telegram (Ukrainian interface).
+            <br />Native mobile app is in development.
           </p>
         </div>
-        <a href="#" class="btn btn--primary btn--sm">
-          Explore Project
+        <a href="https://t.me/shellfish_ai_bot" target="_blank" rel="noopener noreferrer" class="btn btn--primary btn--sm">
+          Try in Telegram
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
         </a>
       </div>
@@ -101,45 +108,41 @@
 
   <!-- ========== ABOUT ME ========== -->
   <!-- TODO philosophy & 4 core principles -->
-  <!-- <section class="about" id="about">
+  <section class="about" id="about">
     <div class="container">
       <div class="about__text">
         <p class="section-label">About Me</p>
         <h2 class="section-title">Philosophy & Mindset</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. Nulla facilisi. Praesent scelerisque neque ac commodo elementum.
+          I'm a creator who builds products end-to-end: from user needs and UX flows to backend architecture, data modeling, and deployment.
         </p>
         <p>
-          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Functional training, HIIT protocols, and physical discipline underpin the same focus brought to engineering — clean architecture, relentless iteration, zero shortcuts.
+          I aim for pragmatic, maintainable systems—shipping iteratively, measuring what matters, and tightening correctness, security, and performance as the product grows.
         </p>
         <p>
-          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Building endurance in the gym mirrors building resilient, scalable systems in production.
+          I like to speak in outcomes and trade-offs, not just code.
         </p>
       </div>
       <div class="about__highlights">
         <div class="highlight-card">
-          <div class="highlight-card__icon">⚡</div>
-          <h3 class="highlight-card__title">Performance-First</h3>
-          <p class="highlight-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque.</p>
+          <h3 class="highlight-card__title" style="display: flex; justify-content: space-between; align-items: center;">Ownership <span class="highlight-card__icon">🧭</span></h3>
+          <p class="highlight-card__desc">I take ownership of the product as a whole, not just individual components.</p>
         </div>
         <div class="highlight-card">
-          <div class="highlight-card__icon">🏗️</div>
-          <h3 class="highlight-card__title">Scalable Systems</h3>
-          <p class="highlight-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in lacus.</p>
+          <h3 class="highlight-card__title" style="display: flex; justify-content: space-between; align-items: center;">Simplicity <span class="highlight-card__icon">🧱</span></h3>
+          <p class="highlight-card__desc">Prefer the simplest solution that scales; avoid cleverness that costs future velocity.</p>
         </div>
         <div class="highlight-card">
-          <div class="highlight-card__icon">🎯</div>
-          <h3 class="highlight-card__title">Product Thinking</h3>
-          <p class="highlight-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam egestas.</p>
+          <h3 class="highlight-card__title" style="display: flex; justify-content: space-between; align-items: center;">Security <span class="highlight-card__icon">🔐</span></h3>
+          <p class="highlight-card__desc">Treat data protection as a baseline: least privilege, safe defaults, and defensive design.</p>
         </div>
         <div class="highlight-card">
-          <div class="highlight-card__icon">🏋️</div>
-          <h3 class="highlight-card__title">Discipline & Grit</h3>
-          <p class="highlight-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat.</p>
+          <h3 class="highlight-card__title" style="display: flex; justify-content: space-between; align-items: center;">Feedback Loops <span class="highlight-card__icon">📈</span></h3>
+          <p class="highlight-card__desc">Ship, observe, learn: instrumentation, user behavior signals, and continuous refinement.</p>
         </div>
       </div>
     </div>
-  </section> -->
+  </section>
 
   <!-- ========== ARTICLES ========== -->
   <!-- <section class="articles" id="articles">
@@ -206,13 +209,13 @@
     <div class="container">
       <p class="footer__copy">&copy; 2026 Ivan Bilan<!-- iwantegren.com --></p>
       <div class="footer__links">
-        <a href="https://github.com" class="footer__icon-link" target="_blank" rel="noopener" aria-label="GitHub">
+        <a href="https://github.com/iwantegren" class="footer__icon-link" target="_blank" rel="noopener" aria-label="GitHub">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.66-.22.66-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.45-1.14-1.1-1.44-1.1-1.44-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.12 2.51.35 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85 0 1.33-.01 2.4-.01 2.73 0 .27.17.58.67.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
         </a>
-        <a href="https://linkedin.com" class="footer__icon-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+        <a href="https://www.linkedin.com/in/ivanbilan/" class="footer__icon-link" target="_blank" rel="noopener" aria-label="LinkedIn">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
         </a>
-        <a href="mailto:hello@iwantegren.com" class="footer__icon-link" aria-label="Email">
+        <a href="mailto:iwantegren@gmail.com" class="footer__icon-link" aria-label="Email">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg>
         </a>
       </div>
