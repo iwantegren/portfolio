@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Engineering Case Studies</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav__logo">iwantegren<span>.</span>com</a>
+      <div class="nav__links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="resume.html">Resume</a>
+        <!-- <a href="case-studies.html" class="active">Case Studies</a> -->
+      </div>
+      <button class="nav__burger" id="navBurger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== PAGE HEADER ========== -->
+  <section class="cs-page-header">
+    <div class="container">
+      <p class="section-label">Deep Dives</p>
+      <h1 class="section-title" style="margin-bottom: 16px;">Engineering Case Studies</h1>
+      <p class="cs-page-header__sub">
+        Specifics are abstracted due to NDAs. Each study focuses entirely on technical problem-solving, architectural trade-offs, and production-grade decision-making.
+      </p>
+    </div>
+  </section>
+
+  <!-- ========== CASE STUDY 1 ========== -->
+  <section class="case-study">
+    <div class="container">
+      <div class="case-study__card">
+        <div class="case-study__header">
+          <div>
+            <p class="case-study__number">CASE STUDY 01</p>
+            <h2 class="case-study__title">Real-Time Inventory Sync at Scale</h2>
+          </div>
+          <div class="case-study__tags">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Redis</span>
+            <span class="tech-tag">AWS</span>
+          </div>
+        </div>
+        <div class="case-study__body">
+          <div class="cs-block">
+            <p class="cs-block__label">The Problem</p>
+            <p class="cs-block__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+            </p>
+          </div>
+          <div class="cs-block">
+            <p class="cs-block__label">The Constraints</p>
+            <p class="cs-block__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin sodales quam nec ante sollicitudin viverra. Donec convallis purus vel nisi elementum, et dignissim metus fermentum. Cras vel nibh in neque.
+            </p>
+          </div>
+          <div class="cs-block">
+            <p class="cs-block__label">The Solution & Architecture</p>
+            <p class="cs-block__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit sed risus.
+            </p>
+            <div class="cs-code-placeholder">
+// Event-driven sync pipeline
+┌──────────┐    ┌──────────┐    ┌──────────┐
+│  Webhook  │───▶│  Queue   │───▶│  Worker  │
+│  Ingress  │    │ (Redis)  │    │  Pool    │
+└──────────┘    └──────────┘    └────┬─────┘
+                                     │
+                              ┌──────▼──────┐
+                              │  PostgreSQL  │
+                              │  + Cache     │
+                              └─────────────┘
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CASE STUDY 2 ========== -->
+  <section class="case-study">
+    <div class="container">
+      <div class="case-study__card">
+        <div class="case-study__header">
+          <div>
+            <p class="case-study__number">CASE STUDY 02</p>
+            <h2 class="case-study__title">Headless Commerce Migration: Monolith to Hydrogen</h2>
+          </div>
+          <div class="case-study__tags">
+            <span class="tech-tag">Shopify</span>
+            <span class="tech-tag">Hydrogen</span>
+            <span class="tech-tag">Remix</span>
+            <span class="tech-tag">TypeScript</span>
+          </div>
+        </div>
+        <div class="case-study__body">
+          <div class="cs-block">
+            <p class="cs-block__label">The Problem</p>
+            <p class="cs-block__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas gravida lacus et arcu lacinia tincidunt. Nullam ac erat ante. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Praesent scelerisque neque ac commodo elementum egestas.
+            </p>
+          </div>
+          <div class="cs-block">
+            <p class="cs-block__label">The Constraints</p>
+            <p class="cs-block__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </div>
+          <div class="cs-block">
+            <p class="cs-block__label">The Solution & Architecture</p>
+            <p class="cs-block__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Totam rem aperiam eaque ipsa quae ab illo.
+            </p>
+            <div class="cs-code-placeholder">
+// Headless storefront architecture
+┌────────────┐   ┌─────────────┐   ┌────────────┐
+│   Remix /  │──▶│  Storefront │──▶│  Shopify   │
+│  Hydrogen  │   │  API Layer  │   │  Admin API │
+│  Frontend  │   │  (GraphQL)  │   │            │
+└────────────┘   └─────────────┘   └────────────┘
+       │                                  │
+       ▼                                  ▼
+┌────────────┐              ┌─────────────────┐
+│    CDN /   │              │   Checkout &    │
+│   Edge     │              │   Payments      │
+└────────────┘              └─────────────────┘
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CASE STUDY 3 ========== -->
+  <section class="case-study">
+    <div class="container">
+      <div class="case-study__card">
+        <div class="case-study__header">
+          <div>
+            <p class="case-study__number">CASE STUDY 03</p>
+            <h2 class="case-study__title">Cross-Platform Mobile App with Shared Business Logic</h2>
+          </div>
+          <div class="case-study__tags">
+            <span class="tech-tag">Flutter</span>
+            <span class="tech-tag">Dart</span>
+            <span class="tech-tag">GCP</span>
+            <span class="tech-tag">REST</span>
+          </div>
+        </div>
+        <div class="case-study__body">
+          <div class="cs-block">
+            <p class="cs-block__label">The Problem</p>
+            <p class="cs-block__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Aliquam erat volutpat. Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Integer vitae libero ac risus egestas placerat. Vestibulum commodo felis quis tortor.
+            </p>
+          </div>
+          <div class="cs-block">
+            <p class="cs-block__label">The Constraints</p>
+            <p class="cs-block__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra.
+            </p>
+          </div>
+          <div class="cs-block">
+            <p class="cs-block__label">The Solution & Architecture</p>
+            <p class="cs-block__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione.
+            </p>
+            <div class="cs-code-placeholder">
+// Shared logic architecture
+┌──────────────────────────────────┐
+│       Flutter UI Layer           │
+│   (Material + Cupertino)         │
+├──────────────────────────────────┤
+│     BLoC / State Management      │
+├──────────────────────────────────┤
+│     Domain Layer (Dart)          │
+│  Use Cases ─ Entities ─ Repos   │
+├──────────────────────────────────┤
+│     Data Layer                   │
+│  API Client ─ Local Cache ─ DTO │
+└──────────────────────────────────┘
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== BOTTOM NAVIGATION ========== -->
+  <section class="cs-bottom-nav">
+    <div class="container">
+      <a href="resume.html" class="btn btn--ghost">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+        Back to Resume
+      </a>
+      <a href="index.html" class="btn btn--primary">
+        Back to Home
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copy">&copy; 2026 iwantegren.com</p>
+      <div class="footer__links">
+        <a href="https://github.com" class="footer__icon-link" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.66-.22.66-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.45-1.14-1.1-1.44-1.1-1.44-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.12 2.51.35 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85 0 1.33-.01 2.4-.01 2.73 0 .27.17.58.67.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+        </a>
+        <a href="https://linkedin.com" class="footer__icon-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="mailto:hello@iwantegren.com" class="footer__icon-link" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== MOBILE NAV JS ========== -->
+  <script>
+    const burger = document.getElementById('navBurger');
+    const links  = document.getElementById('navLinks');
+    burger.addEventListener('click', () => links.classList.toggle('open'));
+  </script>
+
+</body>
+</html>

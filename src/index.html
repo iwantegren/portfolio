@@ -1,47 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Developer & Solopreneur | Personal Profile</title>
-    <meta name="description" content="Personal landing page of a Full-Stack Developer and Indie Hacker from Ukraine.">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Full-Stack Engineer & Indie Developer</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-    <main class="container">
-        <section class="profile-card">
-            <div class="avatar-wrapper">
-                <img src="assets/avatar-dog.jpg" alt="Profile Photo" class="avatar">
-            </div>
-            
-            <div class="bio">
-                <h1>Hello, I'm Ivan</h1>
-                <p class="subtitle">Indie Dev & Solopreneur based in Ukraine 🇺🇦</p>
-                
-                <p class="description">
-                    I build reliable software and digital products. I focus on creating clean code and intuitive user experiences. Currently working on new ventures.
-                </p>
-            </div>
+  <!-- ========== NAV ========== -->
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav__logo">iwantegren<span>.</span>com</a>
+      <div class="nav__links" id="navLinks">
+        <a href="index.html" class="active">Home</a>
+        <a href="resume.html">Resume</a>
+        <!-- <a href="case-studies.html">Case Studies</a> -->
+      </div>
+      <button class="nav__burger" id="navBurger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-            <hr class="divider">
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__text">
+        <span class="hero__badge">// available for freelance</span>
+        <h1 class="hero__title">
+          Full-Stack Engineer<br />
+          <span>&</span> Indie Developer
+        </h1>
+        <p class="hero__sub">
+          Based in Ukraine 🇺🇦 Accessible worldwide
+        </p>
+        <div class="hero__ctas">
+          <a href="resume.html" class="btn btn--primary">
+            My Resume
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#spotlight" class="btn btn--ghost">Public Projects</a>
+        </div>
+      </div>
+      <div class="hero__visual">
+        <img src="assets/avatar-dog.jpg" alt="Profile photo" class="hero__avatar" />
+      </div>
+    </div>
+  </section>
 
-            <div class="status-update">
-                <p>🚀 <strong>Update:</strong> Detailed portfolio, project case studies, and resume are currently being updated and will be published here shortly.</p>
-            </div>
+  <!-- ========== PRODUCT SPOTLIGHT ========== -->
+  <section class="spotlight" id="spotlight">
+    <div class="container">
+      <!-- Shellfish Card -->
+      <!-- TODO fill shellfish info -->
+      <div class="spotlight__card">
+        <img src="assets/shellfish-logo.webp" alt="Project logo" class="spotlight__logo" />
+        <div class="spotlight__info">
+          <p class="spotlight__label">Featured Project</p>
+          <h2 class="spotlight__title">E-commerce Sandbox Architecture</h2>
+          <p class="spotlight__desc">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula metus non tortor gravida, id fermentum purus vestibulum. Sed ac interdum ligula, et volutpat urna. Shopify, Hydrogen & Remix stack powering a next-gen storefront.
+          </p>
+        </div>
+        <a href="#" class="btn btn--primary btn--sm">
+          Explore Project
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+      <!-- NPM Packages Spotlight Grid -->
+      <!-- TODO npm 1 -->
+      <div class="npm-spotlight-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 32px;">
+        <div class="npm-card" style="background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; display: flex; flex-direction: column; gap: 16px; align-items: flex-start;">
+          <span style="font-family: var(--font-mono); font-size: 1.05rem; background: var(--accent-soft); color: var(--accent); padding: 6px 14px; border-radius: 6px;">@iwantegren/fastify-auth</span>
+          <p style="color: var(--text-secondary); font-size: .95rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Provides robust authentication middleware for Fastify apps.</p>
+          <div style="display: flex; gap: 12px;">
+            <a href="https://www.npmjs.com/package/@iwantegren/fastify-auth" target="_blank" rel="noopener" aria-label="npm" style="color: var(--accent);">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;"><text x="2" y="24" font-family="'Space Grotesk', 'Inter', Arial, sans-serif" font-size="20" font-weight="bold" fill="currentColor">npm</text></svg>
+            </a>
+            <a href="https://github.com/iwantegren/fastify-auth" target="_blank" rel="noopener" aria-label="GitHub" style="color: var(--accent);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.66-.22.66-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.45-1.14-1.1-1.44-1.1-1.44-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.12 2.51.35 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85 0 1.33-.01 2.4-.01 2.73 0 .27.17.58.67.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+            </a>
+          </div>
+        </div>
+        <!-- TODO npm 2 -->
+        <div class="npm-card" style="background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px; display: flex; flex-direction: column; gap: 16px; align-items: flex-start;">
+          <span style="font-family: var(--font-mono); font-size: 1.05rem; background: var(--accent-soft); color: var(--accent); padding: 6px 14px; border-radius: 6px;">@iwantegren/cli-utils</span>
+          <p style="color: var(--text-secondary); font-size: .95rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Utility toolkit for building robust CLI tools in Node.js.</p>
+          <div style="display: flex; gap: 12px;">
+            <a href="https://www.npmjs.com/package/@iwantegren/cli-utils" target="_blank" rel="noopener" aria-label="npm" style="color: var(--accent);">
+              <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style="vertical-align:middle;"><text x="2" y="24" font-family="'Space Grotesk', 'Inter', Arial, sans-serif" font-size="20" font-weight="bold" fill="currentColor">npm</text></svg>
+            </a>
+            <a href="https://github.com/iwantegren/cli-utils" target="_blank" rel="noopener" aria-label="GitHub" style="color: var(--accent);">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.66-.22.66-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.45-1.14-1.1-1.44-1.1-1.44-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.12 2.51.35 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85 0 1.33-.01 2.4-.01 2.73 0 .27.17.58.67.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <footer class="footer">
-                <a href="mailto:iwantegren@gmail.com" class="contact-link">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-                    Email Me
-                </a>
-                <a href="https://www.linkedin.com/in/ivanbilan/" target="_blank" class="contact-link">
-                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-                    LinkedIn
-                </a>
-            </footer>
-        </section>
-    </main>
+  <!-- ========== ABOUT ME ========== -->
+  <!-- TODO philosophy & 4 core principles -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about__text">
+        <p class="section-label">About Me</p>
+        <h2 class="section-title">Philosophy & Mindset</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada. Nullam ac erat ante. Nulla facilisi. Praesent scelerisque neque ac commodo elementum.
+        </p>
+        <p>
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Functional training, HIIT protocols, and physical discipline underpin the same focus brought to engineering — clean architecture, relentless iteration, zero shortcuts.
+        </p>
+        <p>
+          Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Building endurance in the gym mirrors building resilient, scalable systems in production.
+        </p>
+      </div>
+      <div class="about__highlights">
+        <div class="highlight-card">
+          <div class="highlight-card__icon">⚡</div>
+          <h3 class="highlight-card__title">Performance-First</h3>
+          <p class="highlight-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-card__icon">🏗️</div>
+          <h3 class="highlight-card__title">Scalable Systems</h3>
+          <p class="highlight-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in lacus.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-card__icon">🎯</div>
+          <h3 class="highlight-card__title">Product Thinking</h3>
+          <p class="highlight-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam egestas.</p>
+        </div>
+        <div class="highlight-card">
+          <div class="highlight-card__icon">🏋️</div>
+          <h3 class="highlight-card__title">Discipline & Grit</h3>
+          <p class="highlight-card__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ARTICLES ========== -->
+  <!-- <section class="articles" id="articles">
+    <div class="container">
+      <p class="section-label">Thought Leadership</p>
+      <h2 class="section-title">Recent Articles</h2>
+      <div class="articles__grid">
+
+        <article class="article-card">
+          <p class="article-card__tag">Architecture</p>
+          <h3 class="article-card__title">Scaling Node.js Microservices Beyond the Monolith</h3>
+          <p class="article-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vestibulum sapien et orci porttitor, at lacinia nulla fermentum.</p>
+          <a href="#" class="article-card__link">
+            Read on Medium
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+          </a>
+        </article>
+
+        <article class="article-card">
+          <p class="article-card__tag">Frontend</p>
+          <h3 class="article-card__title">Remix vs Next.js: A Co-Founder's Perspective on DX</h3>
+          <p class="article-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin at tellus vel nibh efficitur commodo ac in enim.</p>
+          <a href="#" class="article-card__link">
+            Read on Medium
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </article>
+
+        <article class="article-card">
+          <p class="article-card__tag">Strategy</p>
+          <h3 class="article-card__title">Technical Debt as a Product Feature: When to Ship Fast</h3>
+          <p class="article-card__excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris dignissim urna sit amet ultricies volutpat.</p>
+          <a href="#" class="article-card__link">
+            Read on Medium
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </a>
+        </article>
+
+      </div>
+      <div style="text-align:center;">
+        <a href="#" class="btn btn--ghost btn--sm">Read More on Medium</a>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ========== CASE STUDIES HOOK ========== -->
+  <!-- <section class="cs-hook">
+    <div class="container">
+      <h2 class="cs-hook__title">Want to see how I solve complex<br />backend & architectural challenges?</h2>
+      <p class="cs-hook__desc">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Discover trade-offs, system design decisions, and production-grade solutions.
+      </p>
+      <a href="case-studies.html" class="btn btn--primary">
+        Deep Dive into Case Studies
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section> -->
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copy">&copy; 2026 Ivan Bilan<!-- iwantegren.com --></p>
+      <div class="footer__links">
+        <a href="https://github.com" class="footer__icon-link" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.66-.22.66-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.45-1.14-1.1-1.44-1.1-1.44-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.12 2.51.35 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85 0 1.33-.01 2.4-.01 2.73 0 .27.17.58.67.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+        </a>
+        <a href="https://linkedin.com" class="footer__icon-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="mailto:hello@iwantegren.com" class="footer__icon-link" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== MOBILE NAV JS ========== -->
+  <script>
+    const burger = document.getElementById('navBurger');
+    const links  = document.getElementById('navLinks');
+    burger.addEventListener('click', () => links.classList.toggle('open'));
+  </script>
 
 </body>
 </html>

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume — Full-Stack Engineer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav class="nav">
+    <div class="container">
+      <a href="index.html" class="nav__logo">iwantegren<span>.</span>com</a>
+      <div class="nav__links" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="resume.html" class="active">Resume</a>
+        <!-- <a href="case-studies.html">Case Studies</a> -->
+      </div>
+      <button class="nav__burger" id="navBurger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== RESUME HEADER ========== -->
+  <section class="resume-header">
+    <div class="container">
+      <a href="index.html" class="resume-header__back">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+        Back to Home
+      </a>
+      <a href="assets/Ivan Bilan Resume.pdf" download class="btn btn--primary btn--sm">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        Download PDF Resume
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== TECH STACK MATRIX ========== -->
+  <section class="tech-stack">
+    <div class="container">
+      <p class="section-label">Tech Stack</p>
+      <!-- <h2 class="section-title">Tech Stack</h2> -->
+
+      <div class="tech-stack__grid">
+
+        <div class="tech-category">
+          <h3 class="tech-category__title">Backend</h3>
+          <div class="tech-tags">
+            <span class="tech-tag"><img src="../assets/svg/node-js.svg" alt="Node.js" class="tech-icon">Node.js</span>
+            <span class="tech-tag"><img src="../assets/svg/typescript.svg" alt="TypeScript" class="tech-icon">TypeScript</span>
+            <span class="tech-tag"><img src="../assets/svg/nest-js.svg" alt="Nest.js" class="tech-icon">Nest.js</span>
+            <span class="tech-tag"><img src="../assets/svg/postgresql.svg" alt="PostgreSQL" class="tech-icon">PostgreSQL</span>
+            <span class="tech-tag"><img src="../assets/svg/redis.svg" alt="Redis" class="tech-icon">Redis</span>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h3 class="tech-category__title">Frontend</h3>
+          <div class="tech-tags">
+            <span class="tech-tag"><img src="../assets/svg/react-js.svg" alt="React.js" class="tech-icon">React.js</span>
+            <span class="tech-tag"><img src="../assets/svg/vue-js.svg" alt="Vue.js" class="tech-icon">Vue.js</span>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h3 class="tech-category__title">DevOps &amp; Cloud</h3>
+          <div class="tech-tags">
+            <span class="tech-tag"><img src="../assets/svg/docker.svg" alt="Docker" class="tech-icon">Docker</span>
+            <span class="tech-tag"><img src="../assets/svg/ci-cd.svg" alt="CI/CD" class="tech-icon">CI/CD</span>
+          </div>
+        </div>
+
+        <div class="tech-category">
+          <h3 class="tech-category__title">Integrations &amp; Tools</h3>
+          <div class="tech-tags">
+            <span class="tech-tag"><img src="../assets/svg/openai-api.svg" alt="OpenAI API" class="tech-icon">OpenAI API</span>
+            <span class="tech-tag"><img src="../assets/svg/telegram-bot-api.svg" alt="Telegram Bot API" class="tech-icon">Telegram Bot API</span>
+            <span class="tech-tag"><img src="../assets/svg/oauth2-0.svg" alt="OAuth2.0" class="tech-icon">OAuth2.0</span>
+          </div>
+        </div>
+
+        <div class="tech-category tech-category--learning">
+          <h3 class="tech-category__title">Currently Learning</h3>
+          <div class="tech-tags tech-tags--learning">
+            <span class="tech-tag tech-tag-learning"><img src="../assets/svg/flutter.svg" alt="Flutter" class="tech-icon">Flutter</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== EXPERIENCE TIMELINE ========== -->
+  <section class="timeline">
+    <div class="container">
+      <p class="section-label">Career Path</p>
+      <h2 class="section-title">Experience Timeline</h2>
+
+      <div class="timeline__items">
+
+        <!-- Role 1 -->
+        <div class="timeline__item">
+          <p class="timeline__date">2023 — Present</p>
+          <h3 class="timeline__role">Technical Co-Founder & Lead Engineer</h3>
+          <p class="timeline__company">Stealth Startup — E-commerce / SaaS</p>
+          <ul class="timeline__bullets">
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Architecto reiciendis tempore quas laudantium dolorum.</li>
+            <li>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem.</li>
+            <li>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</li>
+          </ul>
+        </div>
+
+        <!-- Role 2 -->
+        <div class="timeline__item">
+          <p class="timeline__date">2021 — 2023</p>
+          <h3 class="timeline__role">Senior Full-Stack Engineer</h3>
+          <p class="timeline__company">Fintech Platform — Series B</p>
+          <ul class="timeline__bullets">
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vehicula metus non tortor gravida.</li>
+            <li>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti.</li>
+            <li>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates.</li>
+          </ul>
+        </div>
+
+        <!-- Role 3 -->
+        <div class="timeline__item">
+          <p class="timeline__date">2019 — 2021</p>
+          <h3 class="timeline__role">Full-Stack Developer</h3>
+          <p class="timeline__company">Digital Agency — Client Projects</p>
+          <ul class="timeline__bullets">
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vehicula metus non tortor gravida vestibulum.</li>
+            <li>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur.</li>
+            <li>Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</li>
+          </ul>
+        </div>
+
+        <!-- Role 4 -->
+        <div class="timeline__item">
+          <p class="timeline__date">2017 — 2019</p>
+          <h3 class="timeline__role">Junior Software Engineer</h3>
+          <p class="timeline__company">SaaS Company — Enterprise Tools</p>
+          <ul class="timeline__bullets">
+            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra ipsum sed eros mollis vehicula.</li>
+            <li>Excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia.</li>
+            <li>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== TECHNICAL PROOF CTA ========== -->
+  <section class="proof-cta" style="padding-block: 80px;">
+    <div class="container">
+      <p class="section-label">Proof in Action</p>
+      <h2 class="section-title">See How I Apply This Stack<br />to Complex Problems</h2>
+      <p style="color: var(--text-secondary); max-width: 500px; margin: 0 auto 32px; font-size: .95rem;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Real architectural decisions, trade-offs, and production-grade outcomes.
+      </p>
+      <a href="case-studies.html" class="btn btn--primary">
+        View Case Studies
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copy">&copy; 2026 iwantegren.com</p>
+      <div class="footer__links">
+        <a href="https://github.com" class="footer__icon-link" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.66-.22.66-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.45-1.14-1.1-1.44-1.1-1.44-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.12 2.51.35 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85 0 1.33-.01 2.4-.01 2.73 0 .27.17.58.67.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+        </a>
+        <a href="https://linkedin.com" class="footer__icon-link" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="mailto:hello@iwantegren.com" class="footer__icon-link" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== MOBILE NAV JS ========== -->
+  <script>
+    const burger = document.getElementById('navBurger');
+    const links  = document.getElementById('navLinks');
+    burger.addEventListener('click', () => links.classList.toggle('open'));
+  </script>
+
+</body>
+</html>
