@@ -69,7 +69,12 @@ ul { list-style: none; }
 
 /* ---------- Section Spacing ---------- */
 section {
-  padding-block: 100px;
+  padding-block: 40px;
+}
+
+/* ---------- Main Content Wrapper ---------- */
+.main-content {
+  padding-bottom: 110px;
 }
 
 /* ============================================
@@ -592,7 +597,7 @@ section {
 
 /* Experience timeline */
 .timeline {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
 }
 .timeline__items {
   position: relative;
@@ -788,7 +793,15 @@ section {
   .case-study__body { grid-template-columns: 1fr; }
   .case-study__header { flex-direction: column; align-items: flex-start; }
 }
+@media (max-width: 1024px) {
+  .main-content {
+    padding-bottom: 120px;
+  }
+}
 @media (max-width: 640px) {
+  .main-content {
+    padding-bottom: 80px;
+  }
   section { padding-block: 60px; }
   .container { padding-inline: 16px; }
   .nav__links { display: none; }
