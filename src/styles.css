@@ -575,7 +575,6 @@ section {
 .tech-category--learning {
   display: inline-block;
   max-width: max-content;
-  margin-top: 2rem;
   background: transparent !important;
   border: 2px dashed var(--border);
   opacity: 0.7;
