@@ -274,8 +274,14 @@ section {
   border-radius: var(--radius-lg);
   padding: 48px;
   transition: border-color var(--transition);
+  scroll-margin-top: 80px;
 }
 .spotlight__card:hover { border-color: var(--accent); }
+.npm-card {
+  border: 1px solid var(--border);
+  transition: border-color var(--transition);
+}
+.npm-card:hover { border-color: var(--accent); }
 .spotlight__logo {
   width: 160px;
   height: 160px;
